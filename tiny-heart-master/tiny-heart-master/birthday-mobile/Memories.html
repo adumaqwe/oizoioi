@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=0.5, minimum-scale=0.5, maximum-scale=0.5, user-scalable=no"> 
+ <title>Tặng em ❤️</title>
+ <link rel="stylesheet" href="css/jquery.fullPage.css">
+ <link rel="stylesheet" href="css/memories.css">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="music-banner" class="music-banner loop">
+    <div class="content">
+      <h2>Bé Đậu ❤</h2>
+      <!-- <p>Bé nhớ nhập đúng thông tin để vào nhé...</p> -->
+      <button class="btnn" onclick="playMusic()" id="playButton">
+        <!-- <span class="icon">▶️</span> -->
+        <span class="text">Bé nhấn vào đây ❤</span>
+      </button>
+    </div>
+  </div>
+  <!-- <audio id="myAudio" src="./music/dungvetrnha.mp3"></audio> -->
+  <audio id="myAudio" class="music" controls  src="./music/nangAmXaDan.mp3#t=9,500" type="audio/mpeg">
+  <script>
+    function playMusic() {
+      const audio = document.getElementById('myAudio');
+      const banner = document.getElementById('music-banner');
+      
+      audio.play();
+      // Thêm hiệu ứng fade out khi ẩn banner
+      banner.style.opacity = '0';
+      banner.style.transition = 'opacity 0.5s ease-out';
+      
+      setTimeout(() => {
+        banner.style.display = 'none';
+      }, 500);
+    }
+    </script>
+  <style>
+  .music-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .content {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .content h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .btnn {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    background: linear-gradient(45deg, #ff6b6b, #ff8e8e);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .btnn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+  }
+  
+  .icon {
+    font-size: 1.2em;
+  }
+  
+  /* Animation cho nút */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .btnns {
+    animation: pulse 2s infinite;
+  }
+  </style>
+  <style>
+    * {
+      font-family: "Montserrat", sans-serif !important;
+      font-optical-sizing: auto;
+      font-style: normal;
+        }
+  </style>
+    
+  
+      </audio>
+  <!-- 背景音乐 -->
+  <div style="display:none">
+    <!-- 网易云外链 -->
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=480353&auto=1&height=66"></iframe>
+  </div>
+<div class="bgcolor">
+  <div style="z-index:100;" id="dowebok">
+      <!--第一屏-->
+      <div class="section">
+        <div class="ly-box01">
+          <div class="ly-txt01">
+            <span class="ly-stxt01">Phụng ơi! </span>
+            <p class="ly-stxt02">25/12/2026</p>
+            <p class="ly-stxt03">là ngày...</p>
+            <p class="ly-stxt04">Noel đúng không em ^^?</p>
+            <p class="ly-stxt05">Hihi :P</p>
+          </div>
+          <div class="ly-txt02">
+            <p class="ly-stxt06">Anh hi vọng là</p>
+            <p class="ly-stxt07">ông già noel sẽ lắng nghe được mong muốn từ em!</p>
+
+          </div>
+      </div>
+    </div>
+
+      <!--第二屏-->
+
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint11"></div>
+          <div class="ly-box11">
+              <div class="ly-txt11">
+                  08/12/2004 ❤
+              </div>
+              <div class="ly-txt12">
+                 Em vẫn xinh như mọi ngày
+              </div>
+              <div class="ly-imgbox11">
+                <img class="ly-img11" src="./img/p1.jpg" style="background-size: contain; object-fit: contain;"> 
+              </div>
+          </div>
+          <div class="ly-triangle11"></div>
+
+          <div class="ly-box12">
+              <div class="ly-txt13">
+                ❤
+              </div>
+              <div class="ly-txt14">
+                 <p>Hôm nay là lễ giáng sinh em ha</p>
+			     <p>Anh chúc em có một mùa lễ noel an lành</p>
+				 <p>và hạnh phúc nha em</p>
+                <p>Anh muốn nói với em</p>
+				 <p>Ngoài trời hơi lạnh bé nhớ mặc áo ấm vào nha</p>
+                 <p>Chỉ được nghe thấy tiếng cười của em thôi là anh như được sưởi ấm qua mùa đông này rồi ///~_~///</p>
+				 <!-- <p>Chúc em hạnh phúc nhé:3</p> -->
+				
+              </div>
+          </div>
+          <div class="ly-triangle12"></div>
+      </div>
+
+      <!--第三屏-->
+
+      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint21"></div>
+          <div class="ly-box21">
+              <div class="ly-txt21">
+                ❤❤
+              </div>
+              <div class="ly-txt22">
+                 <p>Em không chỉ là bông hoa đẹp nhất</p>
+                 <p>mà còn là lý do anh mỉm cười mỗi ngày.</p>
+                 
+              </div>
+              <div class="ly-imgbox21">
+                <img class="ly-img21" src="./img/p6.jpeg" style="background-size: contain; object-fit: contain;">
+              </div>
+          </div>
+          <div class="ly-triangle21"></div>
+
+          <div class="ly-box22">
+              <div class="ly-txt23">
+                ❤❤❤
+              </div>
+              <div class="ly-txt24">
+                  <p>Anh tin em</p>
+                  <p>ngay cả khi em chưa tin chính mình. </p>
+              </div>
+              <div class="ly-imgbox22">
+                <img class="ly-img22" src="./img/p4.jpg" style="background-size: contain; object-fit: contain;">
+              </div>
+          </div>
+          <div class="ly-triangle22"></div>
+
+           <div class="ly-box23">
+              <div class="ly-txt25">
+                ❤❤❤❤
+              </div>
+              <div class="ly-txt26">
+                  <p>Em không cần hoàn hảo</p>
+                  <p>chỉ cần là chính em là đủ rồi.</p>
+              </div>
+              <div class="ly-imgbox23">
+                <img class="ly-img23" src="./img/p3.jpg" style="background-size: contain; object-fit: contain;">
+              </div>
+      </div>
+      </div>
+
+  <!--第五屏-->
+  <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint21"></div>
+          <div class="ly-box52">
+              <div class="ly-txt21">
+               ❤❤❤❤❤
+              </div>
+              <div class="ly-txt22">
+                <p>Thích từ nụ cười của em làm tim anh rung động hoài không nghỉ ngơi, hì hì... Anh mong rằng mọi thứ đều làm dịu dàng với em, cười lên nha em :3
+                </p>
+              </div>
+              <div class="ly-imgbox21">
+                <img class="ly-img21" src="./img/p8.jpeg" style="background-size: contain; object-fit: contain;">
+              </div>
+          </div>
+          <div class="ly-triangle21"></div>
+  </div>
+		      <div class="section">
+          <div class="timeline"></div>
+          <div class="timepoint11"></div>
+          <div class="ly-box81">
+              <div class="ly-txt11">
+                Giáng sinh ấm áp, luôn mỉm cười nha bae!
+              </div>
+              <div class="ly-txt82" style="top:8%">
+                  <p class="wwww1">Huỳnh Vũ Hoàng Phụng</p>
+                  <p class="wwww1">08/12/2004</p>
+                
+              </div>
+              <div class="ly-imgbox81">
+                <img class="ly-img81" src="./img/p10.jpeg" style="">
+              </div>
+          </div>
+          <div class="ly-triangle11"></div>
+
+          <div class="ly-box82">
+              <div class="ly-txt13">
+                Lời nhắn nhủ từ anh 🩵
+              </div>
+              <div class="ly-txt84">
+                 <p>Cảm ơn em vì đã tin tưởng và chấp nhận tình yêu của anh, 
+                  tuy rằng anh vẫn còn nhiều thiếu sót trong bản thân. 
+                  Anh sẽ cố gắng vun đắp những gì có thể cho tình yêu của tụi mình. 
+                  Anh tin rằng chúng mình sẽ có thể vượt qua được những chướng ngại khó khăn phía trước, 
+                  mặc cho khoảng cách tụi mình có xa đi chăng nữa...Dù đôi khi tụi mình có những vấn đề cá nhân, 
+                  hoặc những lời nói gây hiểu nhầm, anh cảm thấy thật yên tâm và cảm kích khi tụi mình chọn cách giải quyết cùng nhau hay chia sẻ những điều giấu kín trong lòng cho nhau (Mad respect to my future waifu 👍).
+                  Những điều anh dành cho em không nhiều nhưng tình cảm của anh dành cho em hoàn toàn đến từ sự chân thành. 
+                  Dù cho kết quả tình yêu của tụi mình có như thế nào thì anh cảm thấy thật may mắn khi có cơ hội trở thành người bạn trai của em...Anh yêu em, Phụng à🩵.</p>
+      
+                    <a href="../../../indexcopy.html" style="    padding: 10px;
+                    background: #E91E63;
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-weight: 800;
+                    font-size: 17px;
+                    border-radius: 6px;">Em nhấn vào đây ❤ </a>
+              </div>
+          </div>
+          <div class="ly-triangle82"></div>
+      </div>
+
+       </div>
+  <!--动态方块-->
+  <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+  </div>
+  <!-- <audio muted src="music/1.mp3" autoplay="autoplay" loop="loop"></audio> -->
+
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<!-- <script src="js/auto-play.js"></script> -->
+<script src="js/memories.js"></script>
+</body>
+</html>
